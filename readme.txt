@@ -2,6 +2,8 @@ IoT Systems Advanced - Project 1: NFC
 
 Dit project betreft de ontwikkeling van een NFC-systeem met behulp van twee microcontrollers, waarbij NFC-tags worden uitgelezen en verwerkt via seriële communicatie.
 
+OPMERKING: Gemaakt op arm based laptop dus drivers zijn anders.
+
 Overzicht
 
 Het systeem bestaat uit twee microcontrollerborden die via een seriële verbinding (USART) communiceren. Het STM32F411RE-bord, uitgerust met een X-CUBE-NFC5 NFC-module, leest NFC-ID’s uit en stuurt deze door naar het STM32F746G Discovery-bord. Op dit tweede bord worden de ID’s verder verwerkt en vergeleken met een vooraf gedefinieerde lijst van geldige ID’s.
