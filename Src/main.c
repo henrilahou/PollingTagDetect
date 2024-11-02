@@ -63,6 +63,7 @@ uint8_t globalCommProtectCnt = 0;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
+static void MX_USART1_UART_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_SPI1_Init(void);
 
@@ -106,6 +107,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+	MX_USART1_UART_Init();
   MX_USART2_UART_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
@@ -125,7 +127,7 @@ int main(void)
     * in case the rfal initalization failed signal it by flashing all LED
     * and stoping all operations
     */
-    platformLog("Initialization failed..\r\n");
+   // platformLog("Initialization failed..\r\n");
     while(1) 
     {
       platformLedToogle(PLATFORM_LED_FIELD_PORT, PLATFORM_LED_FIELD_PIN);
