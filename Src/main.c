@@ -120,7 +120,7 @@ int main(void)
   /* Initialize log module */
   logUsartInit(&huart2);
   
-  platformLog("Welcome to X-NUCLEO-NFC05A1\r\n");
+  //platformLog("Welcome to X-NUCLEO-NFC05A1\r\n");
   
   /* Initalize RFAL */
   if( !demoIni() )
